@@ -1,0 +1,8 @@
+GET - Auth
+username - string
+key - string
+-> token
+// Token goes in all auth headers
+
+POST - decoder
+source - string array
