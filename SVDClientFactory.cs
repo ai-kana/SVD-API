@@ -5,11 +5,11 @@ public class SVDClientFactory
     private readonly string _User;
     private readonly string _Key;
     private readonly string _EndPoint;
-    public SVDClientFactory(string user, string key, string endPoint = "https://www.sshost.club/")
+    public SVDClientFactory(string user, string key, string endPoint = "https://www.sshost.club")
     {
         _User = user;
         _Key = key;
-        _EndPoint = endPoint;
+        _EndPoint = endPoint.TrimEnd('/');
     }
 
     public async Task<SVDClient> CreateClientAsync()
