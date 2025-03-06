@@ -5,7 +5,7 @@ public class SVDClientFactory
     private readonly string _User;
     private readonly string _Key;
     private readonly string _EndPoint;
-    public SVDClientFactory(string user, string key, string endPoint = "http://www.sshost.club:8080")
+    public SVDClientFactory(string user, string key, string endPoint = "https://www.sshost.club/")
     {
         _User = user;
         _Key = key;
