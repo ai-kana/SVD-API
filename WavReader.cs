@@ -149,9 +149,7 @@ public class WavReader
                     *pSamples = (*(int*)file / 2147483648.0f);
                     break;
                 case 3:
-                    // Possible alignment issue?
-                    // int value = (file[0]) | (file[1] << 8) | (file[2] << 16);
-                    int value = (*(int*)file) & 0x00_FF_FF_FF;
+                    int value = (file[0]) | (file[1] << 8) | (file[2] << 16);
 
                     if ((value & 0x800000) != 0)
                     {
